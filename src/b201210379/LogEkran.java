@@ -15,7 +15,7 @@ public class LogEkran implements ILogger {
 
     @Override
     public void log(String mesaj) {
-            System.out.println(LocalDateTime.now() + ": " + mesaj);
+            System.out.println(mesaj);
             LogDosya.getInstance().log(mesaj);
     }
 }
